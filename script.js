@@ -1,11 +1,10 @@
-<script>
-    // Selección de elementos del DOM
-    const menuIcon = document.getElementById('menu-icon');
-    const navLinks = document.getElementById('nav-links');
+// Selecciona el menú hamburguesa y el menú de navegación
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('header nav ul');
 
-    // Evento para alternar el menú
-    menuIcon.addEventListener('click', function () {
-        navLinks.classList.toggle('active'); // Añade o quita la clase 'active'
-        menuIcon.classList.toggle('open');  // Alterna la animación del ícono
-    });
-</script>
+// Agrega un evento para alternar la visibilidad del menú
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active'); // Animación del botón
+    navMenu.classList.toggle('active');  // Mostrar/ocultar menú
+});
+
