@@ -1,0 +1,144 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: 30%; /* Ajusta el tamaño según sea necesario */
+    border-radius: 5px;
+}
+
+.floor-plan-image {
+    width: 100%; /* Ajusta el tamaño según sea necesario */
+    max-width: 600px; /* Limita el tamaño máximo */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff8f8;
+    text-align: center;
+    padding: 15px 0;
+    border-top: solid 1px  #666;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    header .logo img {
+        height: 50px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .image-gallery img {
+        width: 100%; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+
+    .floor-plan-image {
+        width: 100%; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+}
+
+.house-type {
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 30%; /* Ajusta el tamaño según sea necesario */
+    border-radius: 5px;
+}
+
+.floor-plan-image {
+    width: 100%; /* Ajusta el tamaño según sea necesario */
+    max-width: 600px; /* Limita el tamaño máximo */
+    border-radius: 5px;
+    margin-top: 10px;
+}
